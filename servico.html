@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Biblioteca Arruda</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <div class="menu" id="main-menu">
+            <a href="index.html">Início</a>
+            <a href="acervo.html">Acervo</a>
+            <a href="servico.html">Serviços</a>
+        </div>
+
+        <button id="tema-btn">
+            🌙
+        </button>
+
+    </div>
+</nav>
+
+<main class="container">
+
+    <section>
+
+        <h1>📚 Serviços da Biblioteca</h1>
+
+        <p>
+            Conheça os serviços oferecidos pela Biblioteca Arruda
+            para apoiar a leitura, o estudo e o desenvolvimento
+            dos alunos.
+        </p>
+
+    </section>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h3>📖 0</h3>
+            <p>Serviços principais</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>🎉 0</h3>
+            <p>Eventos por ano</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>👨‍🎓 0</h3>
+            <p>Usuários atendidos</p>
+        </div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h2>Empréstimo</h2>
+
+            <ul>
+                <li>Livros</li>
+                <li>Reserva de exemplares</li>
+                <li>Renovação de empréstimos</li>
+                <li>Consulta ao acervo</li>
+                <li>Emprestimo para professores</li>
+            </ul>
+
+            <button
+                class="btn"
+                onclick="acao('Empréstimo')">
+                Acessar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Leitura</h2>
+
+            <ul>
+                <li>Clube do livro</li>
+                <li>Projetos de leitura</li>
+                <li>Indicações por idade</li>
+                <li>Exposições temáticas</li>
+            </ul>
+
+            <button
+                class="btn"
+                onclick="acao('Leitura')">
+                Participar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Eventos</h2>
+
+            <ul>
+                <li>Oficinas</li>
+                <li>Palestras</li>
+                <li>Feiras de livros</li>
+                <li>Reconto de Hístorias</li>
+            </ul>
+
+            <button
+                class="btn"
+                onclick="acao('Eventos')">
+                Ver agenda
+            </button>
+
+        </div>
+
+    </div>
+
+    <section>
+
+        <h2>Destaques</h2>
+
+        <ul>
+            <li>Clube da Leitura aberto para inscrições.</li>
+            <li>Nova coleção de livros de tecnologia.</li>
+            <li>Feira do Livro prevista para agosto.</li>
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 EEPJAP</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+function acao(servico){
+    alert("Você clicou em: " + servico);
+}
+</script>
+
+</body>
+</html>
